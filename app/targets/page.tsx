@@ -20,7 +20,7 @@ type Props = {
 
 const prisma = new PrismaClient()
 
-export default async function page({ target }: Props,) {
+export default async function page(Props: Props) {
   
   const targets = await prisma.target.findMany({
     select: {
