@@ -1,5 +1,7 @@
-import React from 'react';
+
 import Link from 'next/link';
+
+import {ModeToggle} from "../../_components/ui/ModeToggle";
 
 
 type Props = {};
@@ -19,6 +21,7 @@ export default function NavBar({}: Props) {
           </Link>
         ))}
       </div>
+      <ModeToggle />
     </div>
   );
 }
