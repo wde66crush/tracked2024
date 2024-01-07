@@ -6,7 +6,7 @@ type Props = {};
 const LINKS = [
   { href: '/dashboard', id: 'Dashboard' },
   { href: '/targets', id: 'Targets' },
-  { href: '/contact', id: 'Contact' },
+  { href: '/account', id: 'Account' },
 ];
 export default function NavBar({}: Props) {
   return (
