@@ -18,21 +18,20 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-type Props = {
-  
+interface Props {
     name: string;
     description: string;
 }
 
 
-export default function TargetCard( Props: Props) {
+export default function TargetCard( props: Props) {
   return (
     <Card className="w-[350px] m-6">
       <CardHeader>
-        <CardTitle>{Props.name}</CardTitle>
+        <CardTitle>{props.name}</CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription>{Props.description}</CardDescription>
+        <CardDescription>{props.description}</CardDescription>
       </CardContent>
       <CardFooter>
         <div className="grid w-full items-center gap-4">
